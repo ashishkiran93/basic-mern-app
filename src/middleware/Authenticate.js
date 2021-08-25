@@ -15,9 +15,7 @@ const auth = require('./checkUser')
 
 
 
-router.get("/", (req, res)=>{
-    res.send("hello from home page")
-})
+
 
 router.get("/getdata",auth, (req, res)=>{
   res.status(201).send(req.rootUser)
